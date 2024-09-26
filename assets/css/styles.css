@@ -498,10 +498,71 @@ img {
 
 }
 /* Services modal */
+.servi__modal{
+  position: fixed;
+  inset: 0;
+  background-color: hsla(var(--second-hue), 28%, 16%, .7);
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+  z-index: var(--z-modal);
+}
 
+.service__modal-content{
+  position: relative;
+  background-color: var(--body-light);
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+}
+
+.service__model-title,
+.service__model-description{
+  text-align: center;
+}
+
+.service__model-title{
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin: 1rem;
+}
+
+.service__model-description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.servi__modal-list{
+  display: grid;
+  row-gap: .75rem;
+}
+
+.servi__modal-list-item{
+  display: flex;
+  align-items: flex-start;
+  column-gap: .5rem;
+}
+
+.service__modal-icon{
+  font-size: var(--small-font-size);
+}
+
+..service__modal-close{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
 
 /*Active modal*/
-
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
 
 /*=============== WORK ===============*/
 
