@@ -121,4 +121,21 @@ themeButton.addEventListener('click', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    delay: 400,
+    //reset: true
+})
 
+sr.reveal(`.home__data`)
+sr.reveal(`.home__handle`, {delay: 700})
+sr.reveal(`.home__social, .home__scroll` , {delay: 900, origin: 'bottom'})
+
+sr.reveal(`.home__img`, {delay: 900, origin: 'bottom'})
+sr.reveal(`.about__data`, {delay: 600})
+sr.reveal(`.about__img`, {delay: 600, origin: 'bottom'})
+sr.reveal(`.skills__subtitle`, {delay: 600})
+sr.reveal(`.skills__text`, {delay: 600})
+sr.reveal(`.skills__data`, {delay: 600, interval: 100})
